@@ -1,0 +1,67 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-b-blocks-test-purpose {
+  .cardPlugin {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    padding: 10px;
+    .cardContainer {
+      // justify-content: end;
+      //   border: 1px solid red;
+      // border-radius: 15px;
+      // box-shadow: 15px 15px 20px rgb(190, 189, 189);
+      overflow: hidden;
+      .buttonContainer {
+        display: flex;
+        gap: 30px;
+
+        .categoryBtn {
+          background-color: orange;
+          border-radius: 20px;
+          outline: none;
+          border: none;
+          padding-right: 12px;
+          padding-left: 12px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: medium;
+        }
+      }
+
+      .img {
+        object-fit: unset;
+        border: 2px solid gray;
+        border-radius: 15px;
+      }
+      .heading {
+        font-weight: bold;
+      }
+      .para {
+        font-size: 20px;
+        opacity: 0.8;
+        font-weight: 400;
+      }
+      .price {
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .orderBtn {
+        border: none;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 50px;
+      }
+    }
+  }
+}

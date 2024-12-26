@@ -1,0 +1,156 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "b-blocks/test-purpose",
+  "version": "1.0.0",
+  "title": "Card Plugin",
+  "category": "widgets",
+  "description": "Short description of the Card Plugin",
+  "keywords": ["Card Plugin"],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Morning Set"
+    },
+    "description": {
+      "type": "string",
+      "default": "Set of coffee and chocolate cookies as a top tier among out customers and a perfect way to start your day"
+    },
+    "price": {
+      "type": "number",
+      "default": 8
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Order Now"
+    },
+    "categorys": {
+      "type": "array",
+      "default": ["sugar", "vanilla aroma", "cherry jam"]
+    },
+    "photoUrl": {
+      "type": "string",
+      "default": "https://i.ibb.co.com/XX4yP1G/38.jpg"
+    },
+    "image":{
+      "type":"object",
+      "default":{
+        "height":"100%",
+        "width":"100%"
+      }
+    },
+    "imgBorder":{
+      "type":"object",
+      "default":{
+        "width":"2px",
+        "type":"none",
+        "color":"green"
+
+      }
+    },
+    "catButtonColor": {
+      "type": "string",
+      "default": ""
+    },
+    "catButtonTextColor": {
+      "type": "string",
+      "default": ""
+    },
+    "catButtonRedius":{
+      "type":"string",
+      "default":"20px"
+    },
+    "OrderButtonRedius":{
+      "type":"string",
+      "default":"20px"
+    },
+    "headingColor": {
+      "type": "string",
+      "default": ""
+    },
+    "headingSize": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "h1"
+    },
+    "styleType": {
+      "type": "string",
+      "default": "normal"
+    },
+    "orderBtnColor":{
+      "type":"string",
+      "default":"#000"
+    },
+    "orderBtnTextColor":{
+      "type":"string",
+      "default":"#fff"
+    },
+    "desStyle":{
+      "type":"object",
+      "default":{
+        "color":"#000",
+        "bg":"#fff"
+      }
+    },
+    "alignment":{
+      "type":"string",
+      "default":"center"
+    }, 
+    "cardContainer":{
+      "type":"object",
+      "default":{
+        "height":"100%",
+        "width":"600px",
+        "bgColor":"fff",
+        "padding":{
+          "top":"25px",
+          "left":"25px",
+          "right":"25px",
+          "bottom":"25px"
+        },
+        "margin":{
+          "top":"0px",
+          "left":"0px",
+          "right":"0px",
+          "bottom":"0px"
+        },
+        "borderRedius":{
+          "top":"15px",
+          "left":"15px",
+          "right":"15px",
+          "bottom":"15px"
+        },
+        "boxShadow":{
+          "offsetX":"10px",
+          "offsetY":"10px",
+          "blur":"50px",
+          "spread":"10px",
+          "color":"#000"
+        }, 
+        "border":{
+          "width":"2px",
+          "type":"none",
+          "color":"green"
+        }
+
+      }
+    }
+    
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
